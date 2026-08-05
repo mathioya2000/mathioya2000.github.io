@@ -1,113 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joseph Mwangi | ServiceNow Developer</title>
+    <meta charset="UTF-8">
 
-<meta name="description" content="Joseph Mwangi is a ServiceNow Administrator, ServiceNow Developer, and AI Integration Engineer building enterprise automation with ServiceNow, OpenAI, Python, CMDB and ITSM.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    margin:40px;
-    background:#f4f4f4;
-    color:#222;
-}
-.container{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:40px;
-    border-radius:12px;
-    box-shadow:0 0 15px rgba(0,0,0,.15);
-}
-h1{
-    color:#0a66c2;
-}
-h2{
-    color:#333;
-}
-a{
-    color:#0a66c2;
-    text-decoration:none;
-}
-.project{
-    margin-bottom:20px;
-}
-footer{
-    margin-top:40px;
-    color:#666;
-}
-</style>
+    <title>Joseph Mwangi | ServiceNow Administrator and Developer</title>
 
+    <meta
+        name="description"
+        content="Joseph Mwangi is a ServiceNow Administrator, ServiceNow Developer, CAD-certified professional, and AI Integration Engineer in Texas building ITSM, CMDB, OpenAI, Python, REST API, and enterprise automation solutions."
+    >
+
+    <meta name="author" content="Joseph Mwangi">
+
+    <meta
+        name="keywords"
+        content="Joseph Mwangi, ServiceNow Administrator, ServiceNow Developer, ServiceNow CAD, AI Integration Engineer, ServiceNow AI, ITSM, CMDB, CSDM, OpenAI API, Python, REST API, Texas"
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://mathioya2000.github.io/"
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:title"
+        content="Joseph Mwangi | ServiceNow Developer"
+    >
+
+    <meta
+        property="og:description"
+        content="ServiceNow Administrator, Developer, and AI Integration Engineer building AI-powered ITSM and enterprise automation projects."
+    >
+
+    <meta
+        property="og:url"
+        content="https://mathioya2000.github.io/"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Joseph Mwangi ServiceNow Portfolio"
+    >
+
+    <meta name="twitter:card" content="summary">
+
+    <meta
+        name="twitter:title"
+        content="Joseph Mwangi | ServiceNow Developer"
+    >
+
+    <meta
+        name="twitter:description"
+        content="ServiceNow, AI, ITSM, CMDB, Python, OpenAI, and REST API portfolio."
+    >
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Joseph Mwangi",
+        "url": "https://mathioya2000.github.io/",
+        "sameAs": [
+            "https://github.com/mathioya2000"
+        ],
+        "jobTitle": "ServiceNow Administrator, Developer and AI Integration Engineer",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Texas",
+            "addressCountry": "US"
+        },
+        "knowsAbout": [
+            "ServiceNow Administration",
+            "ServiceNow Development",
+            "ITSM",
+            "Incident Management",
+            "Problem Management",
+            "Change Management",
+            "CMDB",
+            "CSDM",
+            "Flow Designer",
+            "OpenAI API",
+            "Python",
+            "REST API Integration",
+            "Enterprise Automation"
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.65;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 35px auto;
+            padding: 45px;
+            background: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        h1 {
+            margin: 0;
+            color: #0a66c2;
+            font-size: 44px;
+        }
+
+        h2 {
+            margin-top: 38px;
+            color: #253858;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            font-size: 21px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .location {
+            color: #666;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 8px 8px 8px 0;
+            padding: 11px 18px;
+            border-radius: 7px;
+            background: #0a66c2;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #084f96;
+        }
+
+        .secondary-button {
+            background: #263238;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 12px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills li {
+            padding: 13px;
+            background: #f4f6f8;
+            border-left: 4px solid #0a66c2;
+            border-radius: 5px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            padding: 22px;
+            border: 1px solid #dfe3e8;
+            border-radius: 10px;
+            background: #ffffff;
+        }
+
+        .project p {
+            min-height: 100px;
+        }
+
+        .project a {
+            color: #0a66c2;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .certification {
+            padding: 18px;
+            border-radius: 8px;
+            background: #eef6ff;
+            border-left: 5px solid #0a66c2;
+        }
+
+        footer {
+            margin-top: 45px;
+            padding-top: 22px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                margin: 0;
+                padding: 25px;
+                border-radius: 0;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="container">
+<main class="container">
 
-<h1>Joseph Mwangi</h1>
+    <header>
+        <h1>Joseph Mwangi</h1>
 
-<h2>ServiceNow Administrator | ServiceNow Developer | AI Integration Engineer</h2>
+        <p class="subtitle">
+            ServiceNow Administrator | ServiceNow Developer |
+            AI Integration Engineer
+        </p>
 
-<p>
-Welcome to my professional portfolio. I build enterprise workflow automation using
-ServiceNow, Artificial Intelligence, Python, OpenAI, REST APIs, CMDB and ITSM.
-</p>
+        <p class="location">Texas, USA</p>
 
-<h2>Core Skills</h2>
+        <p>
+            I build enterprise workflow automation solutions using ServiceNow,
+            artificial intelligence, OpenAI, Python, REST APIs, CMDB, CSDM,
+            Flow Designer and ITSM.
+        </p>
 
-<ul>
-<li>ServiceNow Administration</li>
-<li>ServiceNow Application Development</li>
-<li>ITSM</li>
-<li>CMDB & CSDM</li>
-<li>Flow Designer</li>
-<li>REST API Integration</li>
-<li>OpenAI API</li>
-<li>Python</li>
-<li>Healthcare ServiceNow Solutions</li>
-</ul>
+        <p>
+            My portfolio focuses on AI-powered incident management,
+            intelligent routing, CMDB impact analysis, change-risk assessment,
+            root-cause analysis and employee self-service automation.
+        </p>
 
-<h2>Featured Projects</h2>
+        <a
+            class="button"
+            href="https://github.com/mathioya2000"
+        >
+            View GitHub Profile
+        </a>
 
-<div class="project">
-<b>ServiceNow AI Incident Copilot</b><br>
-<a href="https://github.com/mathioya2000/servicenow-ai-incident-copilot">
-View Repository
-</a>
-</div>
+        <a
+            class="button secondary-button"
+            href="#projects"
+        >
+            View Projects
+        </a>
+    </header>
 
-<div class="project">
-<b>ServiceNow AI Incident Auto-Triage</b><br>
-<a href="https://github.com/mathioya2000/servicenow-ai-incident-auto-triage">
-View Repository
-</a>
-</div>
+    <section>
+        <h2>Professional Certification</h2>
 
-<div class="project">
-<b>ServiceNow AI CMDB Impact Analyzer</b><br>
-<a href="https://github.com/mathioya2000/servicenow-ai-cmdb-impact-analyzer">
-View Repository
-</a>
-</div>
+        <div class="certification">
+            <strong>ServiceNow Certified Application Developer — CAD</strong>
+        </div>
+    </section>
 
-<h2>GitHub Profile</h2>
+    <section>
+        <h2>Core Skills</h2>
 
-<p>
-<a href="https://github.com/mathioya2000">
-https://github.com/mathioya2000
-</a>
-</p>
+        <ul class="skills">
+            <li>ServiceNow Administration</li>
+            <li>ServiceNow Application Development</li>
+            <li>ITSM</li>
+            <li>Incident Management</li>
+            <li>Problem Management</li>
+            <li>Change Management</li>
+            <li>CMDB and CSDM</li>
+            <li>Flow Designer</li>
+            <li>Business Rules</li>
+            <li>GlideRecord</li>
+            <li>REST API Integration</li>
+            <li>OpenAI API</li>
+            <li>Python and FastAPI</li>
+            <li>AI Workflow Automation</li>
+            <li>Healthcare ServiceNow Solutions</li>
+        </ul>
+    </section>
 
-<footer>
+    <section id="projects">
+        <h2>Featured ServiceNow AI Projects</h2>
 
-© 2026 Joseph Mwangi
+        <div class="projects">
 
-</footer>
+            <article class="project">
+                <h3>ServiceNow AI Incident Auto-Triage</h3>
 
-</div>
+                <p>
+                    AI-powered incident classification, priority recommendation,
+                    intelligent routing, SLA-aware triage and round-robin
+                    technician assignment.
+                </p>
+
+                <a
+                    href="https://github.com/mathioya2000/servicenow-ai-incident-auto-triage"
+                >
+                    View repository
+                </a>
+            </article>
+
+            <article class="project">
+                <h3>ServiceNow AI Incident Copilot</h3>
+
+                <p>
+                    AI assistant for incident summarization, business-impact
+                    analysis, triage recommendations and troubleshooting
+                    guidance.
+                </p>
+
+                <a
+                    href="https://github.com/mathioya2000/servicenow-ai-incident-copilot"
+                >
+                    View repository
+                </a>
+            </article>
+
+            <article class="project">
+                <h3>ServiceNow AI CMDB Impact Analyzer</h3>
+
+                <p>
+                    AI-assisted analysis of CMDB relationships, service
+                    dependencies and operational impact for incidents and
+                    changes.
+                </p>
+
+                <a
+                    href="https://github.com/mathioya2000/servicenow-ai-cmdb-impact-analyzer"
+                >
+                    View repository
+                </a>
+            </article>
+
+            <article class="project">
+                <h3>ServiceNow AI Change Risk Advisor</h3>
+
+                <p>
+                    AI-supported change-risk evaluation designed to help
+                    organizations make safer and better-informed change
+                    decisions.
+                </p>
+
+                <a
+                    href="https://github.com/mathioya2000/servicenow-ai-change-risk-advisor"
+                >
+                    View repository
+                </a>
+            </article>
+
+            <article class="project">
+                <h3>ServiceNow AI Problem RCA Assistant</h3>
+
+                <p>
+                    AI-powered root-cause analysis support for identifying
+                    patterns and investigating recurring incidents.
+                </p>
+
+                <a
+                    href="https://github.com/mathioya2000/servicenow-ai-problem-rca-assistant"
+                >
+                    View repository
+                </a>
+            </article>
+
+            <article class="project">
+                <h3>ServiceNow AI Virtual Agent</h3>
+
+                <p>
+                    AI-powered employee self-service assistant for answering
+                    support questions and improving service-desk efficiency.
+                </p>
+
+                <a
+                    href="https://github.com/mathioya2000/servicenow-ai-virtual-agent"
+                >
+                    View repository
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Currently Building</h2>
+
+        <p>
+            Enterprise AI automation projects that combine ServiceNow
+            operational workflows with modern AI decision support,
+            intelligent routing and REST API integrations.
+        </p>
+    </section>
+
+    <section>
+        <h2>Contact and GitHub</h2>
+
+        <p>
+            Review my ServiceNow projects, source code and technical
+            documentation on GitHub.
+        </p>
+
+        <a
+            class="button"
+            href="https://github.com/mathioya2000"
+        >
+            github.com/mathioya2000
+        </a>
+    </section>
+
+    <footer>
+        © 2026 Joseph Mwangi — ServiceNow and AI Developer Portfolio
+    </footer>
+
+</main>
 
 </body>
 </html>
